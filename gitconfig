@@ -1,0 +1,16 @@
+[user]
+	name = Sheppard Y
+	email = ysf1026@gmail.com
+
+[color]
+	status = auto
+	branch = auto
+
+[merge]
+	tool = vimdiff
+[alias]
+	st = status
+	ci = commit -v
+	co = checkout
+[difftool]
+	prompt = No
