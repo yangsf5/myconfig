@@ -12,5 +12,6 @@
 	st = status
 	ci = commit -v
 	co = checkout
+	br = branch
 [difftool]
 	prompt = No
