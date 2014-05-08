@@ -5,3 +5,4 @@ import os
 import shutil
 
 shutil.copy2('./gitconfig', os.path.expanduser("~/.gitconfig"))
+shutil.copy2('./tmux.conf', os.path.expanduser("~/.tmux.conf"))
