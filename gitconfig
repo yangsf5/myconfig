@@ -13,5 +13,6 @@
 	ci = commit -v
 	co = checkout
 	br = branch
+	dt = difftool
 [difftool]
 	prompt = No
