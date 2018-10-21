@@ -1,6 +1,3 @@
-" sheppard 2011-5-3
-" for linux os
-
 call pathogen#infect()
 
 set nocompatible
@@ -42,7 +39,13 @@ if has("autocmd")
 endif
 
 " enconding
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,gbk,gb2312,big5,euc-jp,euc-kr,latin1
+set termencoding=utf-8
+set encoding=utf-8
+
+" just `vim` to open NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 "inoremap ( ()
 "inoremap [ []
